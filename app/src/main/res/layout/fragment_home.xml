@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recycler_view"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentTop="true"/>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progress_bar"
+        android:layout_centerVertical="true" android:layout_centerHorizontal="true"
+        android:visibility="gone"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/empty_tv"
+        android:text="Empty ToDo List!!!"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="#E34439"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        />
+    <!-- TODO: Update blank fragment layout -->
+ <com.google.android.material.floatingactionbutton.FloatingActionButton
+     android:layout_width="wrap_content"
+     android:layout_height="match_parent"
+     android:src="@drawable/add"
+     android:layout_alignParentBottom="true"
+     android:layout_alignParentRight="true"
+     android:layout_marginBottom="20dp"
+     android:layout_marginRight="20dp"
+     android:id="@+id/add_task_btn"
+     android:elevation="20dp"/>
+
+</RelativeLayout>
